@@ -19,23 +19,30 @@
       to { opacity: 1; }
     }
 
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
     h1 {
-      margin-left: 40px;
-      margin-top: 50px;
       color: #1e2a78;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 28px;
     }
 
     p {
-      margin-left: 250px;
-      max-width: 800px;
+      text-align: justify;
       line-height: 1.6;
       font-size: 16px;
+      margin: 20px 0;
     }
 
     .feedback-section {
-      margin-left: 40px;
       margin-top: 50px;
       animation: slideIn 1s ease-in-out;
+      text-align: center;
     }
 
     @keyframes slideIn {
@@ -56,26 +63,27 @@
 
     input[type="text"] {
       height: 90px;
-      width: 200px;
+      width: 100%;
+      max-width: 500px;
       padding: 15px;
       border-radius: 10px;
       border: 2px solid #ccc;
       font-size: 16px;
+      margin-top: 10px;
       transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     input[type="text"]:focus {
       border-color: #1e90ff;
-      box-shadow: 0 0 10px rgba(20, 122, 222, 0.4);
+      box-shadow: 0 0 10px rgba(30, 144, 255, 0.4);
       outline: none;
     }
 
-    a.send-btn {
-      margin-left: 20px;
+    .send-btn {
+      margin-top: 20px;
       padding: 14px 25px;
       background-color: #1e90ff;
       color: white;
-      text-align: center;
       border-radius: 10px;
       display: inline-block;
       text-decoration: none;
@@ -83,64 +91,72 @@
       transition: background-color 0.3s ease, transform 0.2s;
     }
 
-    a.send-btn:hover {
+    .send-btn:hover {
       background-color: #005bb5;
       transform: scale(1.05);
     }
 
-    /* Optional: Responsive */
-    @media (max-width: 768px) {
-      p, input[type="text"] {
-        margin-left: 20px;
-        width: 90%;
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
       }
-      .feedback-section {
-        margin-left: 20px;
+
+      p {
+        font-size: 14px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+      }
+
+      .send-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
       }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>
+      At Shree Krishna Readymade Store Kalwad, we respect your privacy and are committed to protecting your personal information.
+      When you visit our website or make a purchase, we may collect details such as your name, contact number, email address, shipping address, and payment information.
+      This data is used solely to process your orders, improve our services, and provide customer support.
+      We do not sell or share your information with third parties, except for trusted service providers who assist us in operating our store.
+      By using our website, you agree to the collection and use of information in accordance with this policy.
+      All transactions are secured and encrypted.
+    </p>
 
-  <h1>Privacy Policy</h1>
-  <p>
-    At Shree Krishna Readymade Store Kalwad, we respect your privacy and are committed to protecting your personal information.
-    When you visit our website or make a purchase, we may collect details such as your name, contact number, email address, shipping address, and payment information.
-    This data is used solely to process your orders, improve our services, and provide customer support.
-    We do not sell or share your information with third parties, except for trusted service providers who assist us in operating our store.
-    By using our website, you agree to the collection and use of information in accordance with this policy.
-    All transactions are secured and encrypted.
-  </p>
+    <h1>Terms and Conditions</h1>
+    <p>
+      Welcome to Shree Krishna Readymade Store Kalwad. By accessing and using our website, you agree to comply with the following terms and conditions.
+      All products listed are subject to availability and may be withdrawn at any time. Prices are displayed in rupees and are subject to change without notice.
+      We strive for accuracy but reserve the right to correct any errors, including pricing or availability.
+      Returns or exchanges must be made within a few days of delivery, and items must be in original condition.
+      We reserve the right to refuse service or cancel orders at our discretion.
+      Use of our site is at your own risk, and we are not liable for any damages resulting from site use.
+    </p>
 
-  <h1>Terms and Conditions</h1>
-  <p>
-    Welcome to Shree Krishna Readymade Store Kalwad. By accessing and using our website, you agree to comply with the following terms and conditions.
-    All products listed are subject to availability and may be withdrawn at any time. Prices are displayed in rupees and are subject to change without notice.
-    We strive for accuracy but reserve the right to correct any errors, including pricing or availability.
-    Returns or exchanges must be made within a few days of delivery, and items must be in original condition.
-    We reserve the right to refuse service or cancel orders at our discretion.
-    Use of our site is at your own risk, and we are not liable for any damages resulting from site use.
-  </p>
+    <h1>Help</h1>
+    <p>
+      We're here to help! If you have any questions about our products, how to place an order, track a delivery, or handle a return or exchange,
+      feel free to contact us. You can reach us directly by phone at <strong>80059028184</strong> or email us at <strong>deepaky5990@gmail.com</strong>.
+      Our team is ready to support you and ensure a smooth shopping experience.
+    </p>
 
-  <h1>Help</h1>
-  <p>
-    We're here to help! If you have any questions about our products, how to place an order, track a delivery, or handle a return or exchange,
-    feel free to contact us. You can reach us directly by phone at <strong>80059028184</strong> or email us at <strong>deepaky5990@gmail.com</strong>.
-    Our team is ready to support you and ensure a smooth shopping experience.
-  </p>
-
-  <div class="feedback-section">
-    <label for="feedback">Get Feedback:</label><br><br>
-    <input
-      type="text"
-      id="feedback"
-      name="feedback"
-      placeholder="Write a feedback"
-      required
-    >
-    <a href="send.html" class="send-btn">Send</a>
+    <div class="feedback-section">
+      <label for="feedback">Get Feedback:</label><br><br>
+      <input
+        type="text"
+        id="feedback"
+        name="feedback"
+        placeholder="Write a feedback"
+        required
+      ><br>
+      <a href="send.html" class="send-btn">Send</a>
+    </div>
   </div>
-
 </body>
 </html>
-
